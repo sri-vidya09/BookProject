@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://kit.fontawesome.com/3b3c3e8036.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="sectionHome">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container">
+                <a class="navbar-brand" href="#">BookScape
+                    <img class="book-logo" src="https://res.cloudinary.com/dtuk7apnu/image/upload/v1683995374/book_ucyzaf.jpg" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-link active" id="navItem1" href="#wcuSection">
+                            Why Choose Us?
+                            <span class="sr-only">(current)</span>
+                        </a>
+                        <a class="nav-link" href="#home" id="navItem2">Home</a>
+                        <a class="nav-link" href="#sectionanadviseId" id="navItem3">An Advise</a>
+                        <a class="nav-link" href="#suggestion" id="navItem4">Suggestion</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="bg-container" id="home">
+            <h1 class="home-heading">The Art Of Reading</h1>
+            <div>
+                <button class="suggestion" onclick="display('sectionSuggest')">Search Book</button>
+                <button class="advise" onclick="display('sectionanadviseId')">An Advise</button>
+            </div>
+        </div>
+        <div class="wcu-boxcontainer" id="wcuSection">
+            <h1 class="wcuheading">Why Choose Us?</h1>
+            <p class="wcupara">"This is the perfect website for the people who are searching for good books and to get suggested and advice peeps to read books." </p>
+            <form id="myForm">
+                <div class="formfill">
+                    <div class="mb-3 ">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" />
+                        <p id="nameErrMsg" class="error-message"></p>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email">Email</label>
+                        <input type="text" class="form-control" id="email" placeholder="Enter e-mail" />
+                        <p id="emailErrMsg" class="error-message"></p>
+                    </div>
+                    <div class="d-flex flex-column  justify-content-center">
+                        <label for="confirmPassword">Password</label>
+                        <input type="password" id="confirmPassword" placeholder="Confirm Password" class="form-control" />
+                        <p class="para" id="confirmPasswordErrMsg"></p>
+                    </div>
+                </div>
+                <div class="login-button ml-3">
+                    <button type="submit" class="btn btn-primary" onclick="display('sectionanadviseId')">Login</button>
+                </div>
+            </form>
+            <div class="Other-info d-flex flex-column">
+                <h1 class="footer-heading">Address</h1>
+                <p class="footer-para">Novel Tech Park, 1st Floor, Hosur Rd, Kudlu gate, Bengaluru, Karnataka 560068<br />
+                    Phone: 0804-717-8999<br />
+                    Email: hi@booksapp.com</p>
+                <h1 class="footer-heading">Social Media</h1>
+                <div class="d-flex flex-row justify-content-start m-3 ">
+                    <div class="follow-us-icon-container mr-2">
+                        <i class="fab fa-instagram icon"></i>
+                    </div>
+                    <div class="follow-us-icon-container">
+                        <i class="fab fa-facebook icon"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copy-right">
+                <p class="copy-para">Copyright 2017 - 2023 | BookScape is a brand of THINK AHEAD INNOVATIONS PVT. LTD. | All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+    <div id="sectionanadviseId">
+        <div class="advise-bg-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="advise-heading">An Advice!</h1>
+                        <h1 class="create-task-heading">
+                            <span class="create-task-heading-subpart"> Drop a </span> Book!
+                        </h1>
+                        <input type="text" id="bookUserInput" class="book-user-input" placeholder="Enlightens your peace..." />
+                        <button class="button" id="addNewButton">Add New</button>
+                        <h1 class="collection-items-heading">
+                            To My <span class="advice-items-heading-subpart">Collections</span>
+                        </h1>
+                        <ul class="advice-items-container" id="adviceItemsContainer"></ul>
+                        <button class="save btn btn-primary" id="saveBtn">Save</button>
+                        <button class="btn btn-dark" onclick="display('sectionHome')">back</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sectionSuggest">
+        <div class="bg-container text-center">
+
+            <h1 class="main-heading">Wikkii
+                <br />
+                Book!!
+            </h1>
+            <input type="search" class="search-bar" placeholder="Type book title" id="searchInput" />
+            <div class="d-none" id="spinner">
+                <div class="d-flex justify-content-center">
+                    <div class="spinner-border" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionHome')">back</button>
+        </div>
+
+        <div class="search-results" id="searchResults"></div>
+    </div>
+
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+
+
+
+
+</html>

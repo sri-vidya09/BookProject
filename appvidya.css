@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+.bg-container {
+    background-image: url("https://images.theconversation.com/files/45159/original/rptgtpxd-1396254731.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=754&h=502&fit=crop&dpr=1");
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-logo {
+    width: 80px;
+    height: 70px;
+}
+
+.navbar-brand {
+    color: #ccb560;
+    font-weight: bold;
+}
+
+.home-heading {
+    color: white;
+    font-family: "Roboto";
+    font-size: 45px;
+    font-weight: 300;
+    font-weight: bold;
+}
+
+.suggestion {
+    background-color: #f8fafc;
+    color: #000000;
+    border-radius: 10px;
+    font-family: "Roboto";
+    height: 25px;
+    width: 150px;
+    border: 0px;
+}
+
+.advise {
+    background-color: #f0cd1d;
+    color: #000000;
+    border-radius: 10px;
+    font-family: "Roboto";
+    height: 25px;
+    width: 150px;
+    border: 0px;
+}
+
+.wcu-boxcontainer {
+    background-color: white;
+    height: 90vh;
+
+}
+
+.wcuheading {
+    color: #2b0b1f;
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+.login-button {
+    margin-bottom: 10px;
+
+}
+
+.error-message {
+    color: #dc3545;
+    font-family: "Roboto";
+    font-size: 14px;
+}
+
+.form-control {
+    width: 30%;
+}
+
+.formfill {
+    margin-left: 20px;
+
+}
+
+.wcupara {
+    color: #0e0214;
+    font-family: "Roboto";
+    font-size: 15px;
+    text-align: center;
+    padding: 10px;
+}
+
+.footer-heading {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.footer-para {
+    font-size: 10px;
+    padding: 4px;
+    margin: 5px;
+}
+
+.copy-right {
+    background-color: #000000;
+}
+
+.copy-para {
+    font-size: 10px;
+    color: #ffffff;
+    padding: 5px;
+    text-align: center;
+}
+
+.advise-bg-container {
+    background-image: url("https://res.cloudinary.com/dtuk7apnu/image/upload/v1684016429/book3_snripo.jpg");
+    height: 100vh;
+    background-size: cover;
+}
+
+.advise-heading {
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 46px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.create-task-heading {
+    font-family: "Roboto";
+    font-size: 32px;
+    font-weight: bold;
+    color: #030202;
+}
+
+.create-task-heading-subpart {
+    font-family: "Roboto";
+    font-size: 32px;
+    font-weight: 500;
+    color: #030202;
+}
+
+.collection-items-heading {
+    font-family: "Roboto";
+    font-size: 32px;
+    font-weight: 700;
+    color: #030202;
+}
+
+.advice-items-heading-subpart {
+    font-family: "Roboto";
+    font-size: 32px;
+    font-weight: 500;
+    color: #030202;
+}
+
+.advice-items-container {
+    margin: 0px;
+    padding: 0px;
+}
+
+.book-item-container {
+    margin-top: 15px;
+}
+
+.book-user-input {
+    background-color: white;
+    width: 100%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e4e7eb;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 15px;
+}
+
+.button {
+    color: white;
+    background-color: #f0d613;
+    font-family: "Roboto";
+    font-size: 18px;
+    border-width: 0px;
+    border-radius: 4px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.label-container {
+    background-color: #e6f6ff;
+    width: 100%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: #f0d613;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 4px;
+    margin: 5px;
+}
+
+.checkbox-input {
+    width: 20px;
+    height: 20px;
+    margin-top: 12px;
+    margin-right: 12px;
+}
+
+.checkbox-label {
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 400;
+    width: 82%;
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+}
+
+.delete-icon-container {
+    text-align: right;
+    width: 18%;
+}
+
+.delete-icon {
+    padding: 15px;
+}
+
+.checked {
+    text-decoration: line-through;
+    color: red;
+}
+
+.heading-suggest {
+    color: #54080f;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Bree";
+}
+
+.search-input {
+    height: 50px;
+}
+
+.result-books {
+    margin-top: 18px;
+    margin-left: 20px;
+}
+
+.result-item {
+    margin-left: 40%;
+}
+
+.bg-container {
+    background-image: url("https://assets.ccbp.in/frontend/dynamic-webapps/library-management-bg.png");
+    height: 50vh;
+    background-size: cover;
+}
+
+.main-heading {
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+.search-bar {
+    width: 60%;
+}
+
+.popular-books {
+    color: #323f4b;
+    font-family: "Roboto";
+    font-size: 28px;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+}
